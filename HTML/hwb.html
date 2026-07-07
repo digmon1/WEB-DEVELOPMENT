@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="../IMAGE/favicon.ico">
+    <style>
+        .outer{
+            font-size: 40px;
+            width: 400px;
+            height: 400px;
+            border: 1px solid black;
+        }
+        .inner{
+            width: 50%;
+            height: 50%;
+            border: 1px dashed black;
+            
+        }
+        .outer1{
+            width: 50vh;
+            height: 50vh;
+            border: 1px solid black;
+        }
+        .inner1{
+            width: 25vw;
+            height: 25vh;
+            border: 1px solid black;
+        }
+    </style>
+</head>
+<body>
+    <h1>Height, Widh and Border</h1>
+    <p>Absolute Unit vs Relative Unit</p>
+    <!--Absolute Unit vs Relative Unit
+    Absloute Fixed Unit: px, inch, cm, mm.
+    Relative Unit: not fixed unit; %, rem, em, vw,vh
+    Irem- means font size of root element
+    Iem- means font sizde of parent element 
+    100vh- viewport height of screen
+    100%- means 100% size of parent attribute
+    -->
+    <div class="outer">
+        <p>Outer Box</p>
+        <div class="inner">
+            <p>Inner Box</p>
+            <p style="font-size:1.5rem;">Rem Unit.</p>
+            <p style="font-size: 0.5em;"> EM Unit.</p>
+
+        </div>
+    </div>
+
+    
+    <h3>Viewport widht (vw) and Viewport Heigh (vh)</h3>
+    <div class="outer1">
+        <div class="inner1"></div>
+    </div>
+</body>
+</html>

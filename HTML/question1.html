@@ -1,0 +1,82 @@
+<!--
+Create a job application form.txt
+create a input fileds for name, email, contact, address, cover letter, gender, skills
+province(select option) and submit button-->
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <h1>Job Application Form</h1>
+    <form>
+        <fieldset>
+            <legend>Pesonal information</legend>
+            <label for="name">Applicant Form</label>
+            <br>
+            <input type="text" name="name" id="name" placeholder="Your name" required>
+            <br><br>
+            <label for="name">Email</label>
+            <br>
+            <input type="text" name="Email" id="Email" placeholder="Enter you email">
+            <br><br>
+            <label for="name">Contact</label>
+            <br>
+            <input type="text" name="contact" id="contact" placeholder="Your contact" minlength="10" maxlength="10"
+                required>
+            <br><br>
+            <label for="cover letter">CV</label>
+            <br>
+            <input type="file" name="" id="" multiple accept=".pdf">
+            <br><br>
+            <label for="name">Address</label>
+            <br>
+            <input type="text" name="Address" id="Address" placeholder="Your Address">
+        </fieldset>
+        <br><br>
+        <label for="gender">Gender</label>
+        <br>
+        <input type="radio" name="gender" id="male" value="male">
+        <label for="Male">Male</label>
+        <br>
+        <input type="radio" name="gender" id="female" value="female">
+        <label for="female">Female</label>
+        <br> <br>
+        <label for="skills">Skills</label>
+        <br>
+        <input type="checkbox" name="Skills" id="Python" value="python">
+        <label for="">Python</label>
+        <br>
+        <input type="checkbox" name="Skills" id="Database" value="Database">
+        <label for="">Database</label>
+        <br>
+        <input type="checkbox" name="skills" id="Networking" value="networking">
+        <label for="">Networking</label>
+        <br> <br>
+        <label for="Education">Education</label>
+        <select name="eduacation" id="Education">
+            <option value="Education">Education</option>
+            <option label="SEE">SEE</option>
+            <option label="+2 pass">+2 pass</option>
+            <option label="Bachelor">Bachelor</option>
+        </select>
+        <br><br>
+        <label for="province">Province</label>
+        <select name="province" id="province">
+            <option value="province">Province</option>
+            <option label="Koshi">Koshi</option>
+            <option label="Madesh">Madesh</option>
+            <option label="Bagmati">Bagmati</option>
+            <option label="Gandaki">Gandaki</option>
+            <option label="Lumbini">Lumbini</option>
+            <option label="Karnali">Karnali</option>
+            <option label="Sudarpaschim">Sudarpaschim</option>
+        </select>
+    </form>
+</body>
+
+</html>

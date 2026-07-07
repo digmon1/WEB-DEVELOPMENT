@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="../CSS/flexbox.css">
+</head>
+
+<body>
+    <h1>Flexbox</h1>
+    <hr>
+    <div class="container">
+        <div class="item item1">1</div>
+        <div class="item item2">2</div>
+        <div class="item item3">3</div>
+        <div class="item item4">4</div>
+        <div class="item item5">5</div>
+        <div class="item item1">6</div>
+        <div class="item item2">7</div>
+        <div class="item item3">8</div>
+        <div class="item item4">9</div>
+        <div class="item item5">10</div>
+        <div class="item item1">11</div>
+        <div class="item item2">12</div>
+        <div class="item item3">13</div>
+        <div class="item item4">14</div>
+        <div class="item item5">15</div>
+        <div class="item item1">16</div>
+        <div class="item item2">17</div>
+        <div class="item item3">18</div>
+        <div class="item item4">19</div>
+        <div class="item item5">20</div>
+        <!--flexbox -used to align item in one documentation and items inside it.It helps the align item horizontally, vetically, change the direction of flex, shrink the item, grow the item, arrange the order, etc .. -->
+
+    </div>
+    <h3>Flex Direction</h3>
+    <hr>
+    <p>Row</p>
+    <div class="container">
+        <div class="item">1</div>
+        <div class="item">2</div>
+        <div class="item">3</div>
+        <div class="item">4</div>
+        <div class="item">5</div>
+        <div class="item">6</div>
+    </div>
+    <hr>
+    <p>Row-Inverse</p>
+    <div class="container" style="flex-direction: row-reverse;">
+        <div class="item">1</div>
+        <div class="item">2</div>
+        <div class="item">3</div>
+        <div class="item">4</div>
+        <div class="item">5</div>
+        <div class="item">6</div>
+    </div>
+    <hr>
+    <p>Column</p>
+    <div class="container" style="flex-direction: column;">
+        <div class="item">1</div>
+        <div class="item">2</div>
+        <div class="item">3</div>
+        <div class="item">4</div>
+        <div class="item">5</div>
+        <div class="item">6</div>
+    </div>
+    <hr>
+    <p>Column-Reverse</p>
+    <div class="container" style="flex-direction: column-reverse;">
+        <div class="item">1</div>
+        <div class="item">2</div>
+        <div class="item">3</div>
+        <div class="item">4</div>
+        <div class="item">5</div>
+        <div class="item">6</div>
+    </div>
+    <hr>
+    <h3>justify content</h3>
+    <!--justify content arrange the items in the main axis syntax:
+    Justify-content: start/end/center/space-evenly/space-around, space-between-->
+    <div class="container" style="background-color: lightgrey; justify-content: start;">
+        <div class="item">1</div>
+        <div class="item">2</div>
+        <div class="item">3</div>
+        <div class="item">4</div>
+        <div class="item">5</div>
+    </div>
+    <div class="container" style="background-color: lightblue; justify-content: end;">
+        <div class="item">1</div>
+        <div class="item">2</div>
+        <div class="item">3</div>
+        <div class="item">4</div>
+        <div class="item">5</div>
+    </div>
+    <div class="container" style="background-color: aliceblue; justify-content: center;">
+        <div class="item">1</div>
+        <div class="item">2</div>
+        <div class="item">3</div>
+        <div class="item">4</div>
+        <div class="item">5</div>
+    </div>
+    <div class="container" style="background-color: lightcyan; justify-content: space-around;">
+        <div class="item">1</div>
+        <div class="item">2</div>
+        <div class="item">3</div>
+        <div class="item">4</div>
+        <div class="item">5</div>
+    </div>
+    <div class="container" style="background-color: lightpink; justify-content: space-between;">
+        <div class="item">1</div>
+        <div class="item">2</div>
+        <div class="item">3</div>
+        <div class="item">4</div>
+        <div class="item">5</div>
+    </div>
+    <div class="container" style="background-color: lightseagreen; justify-content: space-evenly;">
+        <div class="item">1</div>
+        <div class="item">2</div>
+        <div class="item">3</div>
+        <div class="item">4</div>
+        <div class="item">5</div>
+    </div>
+    <h3>Align Item</h3>
+    <!--Align item arrange the items in cross-axis -->
+    <div class="container" style="background-color: tomato;justify-content: space-evenly; align-items: start;">
+        <div class="item">1</div>
+        <div class="item">2</div>
+        <div class="item">3</div>
+        <div class="item">4</div>
+        <div class="item">5</div>
+        <div class="item">6</div>
+    </div>
+    <div class="container" style="background-color: tomato;justify-content: space-evenly; align-items: end;">
+        <div class="item">1</div>
+        <div class="item">2</div>
+        <div class="item">3</div>
+        <div class="item">4</div>
+        <div class="item">5</div>
+        <div class="item">6</div>
+    </div>
+    <div class="container" style="background-color: tomato;justify-content: space-evenly; align-items:center;">
+        <div class="item">1</div>
+        <div class="item">2</div>
+        <div class="item">3</div>
+        <div class="item">4</div>
+        <div class="item">5</div>
+        <div class="item">6</div>
+    </div>
+    
+</body>
+
+</html>

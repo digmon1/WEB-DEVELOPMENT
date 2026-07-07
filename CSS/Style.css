@@ -1,0 +1,18 @@
+div{
+    background-color:rgb(234, 55, 24);
+    color:white
+}
+span{
+    color:aquamarine
+}
+*{
+    background-color: lightgreen;
+    color: darkolivegreen;
+}
+.title{
+    color: white
+}
+#title1{
+    background-color: pink;
+    color:aliceblue
+}

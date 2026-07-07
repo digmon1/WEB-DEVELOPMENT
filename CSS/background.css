@@ -1,0 +1,40 @@
+body{
+    background-image: url("../IMAGE/sanjay1.jpeg");
+    background-size: 380px;
+    background-repeat: no-repeat;
+    background-position: right top;
+    background-attachment: fixed;
+}
+/* 
+Background-size for the size of an background image value can be unit or (auto/cover/contain)
+Background-repeat: defines how many times image will be repeated. Possible values (repeat-x[rpeats image in x-asix], repeat-y[repeats image in y-aixs],
+no repeat)
+
+Background-attachement: defines whether a image is scorllable or fixed.
+
+Background-position: to fix the image in certain position of the screen.
+*/
+.container{
+    height: 1000px;
+    width: 300px;
+    background-color:darkslateblue;
+}
+.bg-container{
+    height: 500px;
+    width: 500px;
+    border: 1px solid black;
+}
+#auto{
+    background-image: url("../IMAGE/sanjay1.jpeg");
+    background-size: auto;
+}
+#cover{
+    background-image:url("../IMAGE/dragon.webp");
+    background-size: cover;
+}
+#contain{
+    background-image: url("../IMAGE/stellar.webp");
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+}

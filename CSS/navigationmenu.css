@@ -1,0 +1,42 @@
+a{
+    color: black;
+    color: white;
+    text-decoration: none;
+}
+ul{
+    list-style: none;
+}
+.navbar{
+    display: flex ;
+    justify-content: space-around;
+    align-items: center;
+    background-color: green;
+    color: white;
+    position: fixed;
+    left: 0px;
+    width: 100vw;
+    top: 0px;
+}
+.links{
+    display: flex;
+    gap: 50px ;
+}
+li:hover{
+    text-decoration: underline solid 1px;
+    font-weight: 700 ;
+}
+.logo{
+    font-weight: 900 ;
+    font-size: 24px;
+}
+.dropdown{
+    position: absolute;
+    background-color: green;
+    margin: 0px;
+    padding: 0px;
+    min-width: 120px;
+    display: none;
+}
+li:hover .dropdown{
+    display: block;
+}

@@ -1,0 +1,43 @@
+.container {
+    border: 1px solid black;
+    width: 500px;
+}
+
+#static {
+    position: static;
+    top: 200px;
+}
+
+#relative {
+    position: relative;
+    top: 10px;
+    left: 50px;
+}
+
+.parent {
+    width: 60vw;
+    height: 40vh;
+    border: 1px solid black;
+}
+
+#absolute {
+    position: absolute;
+    top: 100px;
+}
+
+#fixed {
+    position: fixed;
+    top: 0px;
+    left: 0px;
+}
+
+#sticky {
+    position: sticky;
+    top: 500px;
+}
+
+/* Static- not movable
+relative- relative to orginal position
+absolute- take reference from ancestor
+fixed- fixed for postion
+sticky- movable until it reach position offset(top, left, bottom, right)*/

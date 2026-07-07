@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="../CSS/flexbox.css">
+</head>
+
+<body>
+    <h1>Flexbox day 2</h1>
+    <div class="container">
+        <div class="item">1</div>
+        <div class="item">2</div>
+        <div class="item">3</div>
+        <div class="item">4</div>
+        <div class="item">5</div>
+    </div>
+    <hr>
+    <h3>Flex</h3>
+    <div class="container1">
+        <div class="box">1</div>
+        <div class="box">2</div>
+        <div class="box">3</div>
+        <div class="box">4</div>
+        <div class="box">5</div>
+        <div class="box">6</div>
+        <div class="box">7</div>
+        <div class="box">8</div>
+        <div class="box">9</div>
+        <div class="box">10</div>
+        <div class="box">11</div>
+        <div class="box">12</div>
+    </div>
+    <hr>
+    <h3>Flex wrap</h3>
+    <!--Flex wrap- this property is responsive to wrap and unwrap theitems in the container values:
+    nowwrap- default value (items shrink instead of appearing in the new line).
+    wrap- if the all the items total size (width a0r height; in main axis) exceeds the container size (width or height; in main axis), then the items appear in new line.
+    wrap-reverse- same as wrap in reverse-->
+    <p>Nowrap</p>
+    <div class="container1" style="flex-wrap: nowrap;">
+        <div class="box">1</div>
+        <div class="box">2</div>
+        <div class="box">3</div>
+        <div class="box">4</div>
+        <div class="box">5</div>
+        <div class="box">6</div>
+        <div class="box">7</div>
+        <div class="box">8</div>
+        <div class="box">9</div>
+        <div class="box">10</div>
+        <div class="box">11</div>
+        <div class="box">12</div>
+    </div>
+
+    <p>wrap</p>
+    <div class="container1" style="flex-wrap: wrap;">
+        <div class="box">1</div>
+        <div class="box">2</div>
+        <div class="box">3</div>
+        <div class="box">4</div>
+        <div class="box">5</div>
+        <div class="box">6</div>
+        <div class="box">7</div>
+        <div class="box">8</div>
+        <div class="box">9</div>
+        <div class="box">10</div>
+        <div class="box">11</div>
+        <div class="box">12</div>
+    </div>
+    <p>wrap-reverse</p>
+    <div class="container1" style="flex-wrap: wrap-reverse;">
+        <div class="box">1</div>
+        <div class="box">2</div>
+        <div class="box">3</div>
+        <div class="box">4</div>
+        <div class="box">5</div>
+        <div class="box">6</div>
+        <div class="box">7</div>
+        <div class="box">8</div>
+        <div class="box">9</div>
+        <div class="box">10</div>
+        <div class="box">11</div>
+        <div class="box">12</div>
+    </div>
+    <h3>Order</h3>
+    <div class="container1" style="flex-wrap:nowrap ;">
+        <div class="box" style="order: 3;">1</div>
+        <div class="box" style="order: 2;">2</div>
+        <div class="box" style="order: 5;">3</div>
+        <div class="box" style="order: 1;">4</div>
+        <div class="box" style="order: 4;">5</div>
+    </div>
+    <hr>
+    <h3>Shrink</h3>
+    <!--to work with flex shrink in a container; the size of a ci=ontainer should be less than the total size of all items.
+    Base value for flex shrink is 1. If the value is icreased the shrinking proportion is  also increase.-->
+    <div class="container1" n style="width: 350px;">
+        <div class="box">1</div>
+        <div class="box" style="flex-shrink: 1;">2</div>
+        <div class="box" style="flex-shrink: 2;">3</div>
+        <div class="box">4</div>
+        <div class="box">5</div>
+    </div>
+    <hr>
+    <h3>Grow</h3>
+    <!--flex-grow- to work with flex-grow of size of container be more than the total size of all true items, it covers the empty spaces.
+    Base value:0 
+    If the value is increased form the base value then the growing proportion is also increased.-->
+    <div class="container1">
+        <div class="box">1</div>
+        <div class="box" style="flex-grow: 0;">2</div>
+        <div class="box" style="flex-grow: 1;">3</div>
+        <div class="box" style="flex-grow: 2;">4</div>
+        <div class="box" style="flex-grow: 3;">5</div>
+        <div class="box">6</div>
+
+    </div>
+    <hr>
+    <h3>Align-Shelf</h3>
+    <div class="container1">
+        <div class="box" style="align-self: flex-start;">1</div>
+        <div class="box" style="align-self: flex-end;">2</div>
+        <div class="box" style="align-self: center;">3</div>
+        <div class="box">4</div>
+        <div class="box">5</div>
+    </div>
+    <hr>
+    <h3>align Content</h3>
+    <div class="container1" style="height: 800px; width: 380px; flex-wrap: wrap; align-content: center;">
+        <div class="box">1</div>
+        <div class="box">2</div>
+        <div class="box">3</div>
+        <div class="box">4</div>
+        <div class="box">5</div>
+        <div class="box">6</div>
+    </div>
+     <hr>
+    <h3>align Content</h3>
+    <!--align content works when the items inside the container is arranged in a multiple line. It helps align multi line items in a cross axis.-->
+    <div class="container1" style="height: 800px; width: 380px; flex-wrap: wrap; align-content: flex-end;">
+        <div class="box">1</div>
+        <div class="box">2</div>
+        <div class="box">3</div>
+        <div class="box">4</div>
+        <div class="box">5</div>
+        <div class="box">6</div>
+    </div>
+     <hr>
+    <h3>align Content</h3>
+    <div class="container1" style="height: 800px; width: 380px; flex-wrap: wrap; align-content: flex-start;">
+        <div class="box">1</div>
+        <div class="box">2</div>
+        <div class="box">3</div>
+        <div class="box">4</div>
+        <div class="box">5</div>
+        <div class="box">6</div>
+    </div>
+</body>
+
+</html>

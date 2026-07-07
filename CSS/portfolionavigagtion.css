@@ -1,0 +1,23 @@
+a{
+    color: rgb(186, 27, 27);
+    color: white;
+    text-decoration: none;
+}
+ul{
+    list-style: none;
+}
+.navbar{
+    display: flex ;
+    justify-content: space-around;
+    align-items: center;
+    background-color: rgb(3, 2, 25);
+    color: white;
+    position: fixed;
+    left: 0px;
+    width: 100vw;
+    top: 0px;
+}
+.links{
+    display: flex;
+    gap: 50px ;
+}

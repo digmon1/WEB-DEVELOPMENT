@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .box{
+            width: 100px;
+            height: 100px;
+            background-color: orange;
+            /* Syntax
+            transition: property duration transition-timing-function delay;
+            */
+            transition: background-color 2s steps(9, jump-end) 1s;
+        }
+        .box:hover{
+            background-color: skyblue;
+        }
+        /* Multiple-Traansition*/
+        .box2{
+            width: 100px;
+            height: 100px;
+            background-color: navy;
+            transition: width 2s linear, height 2s ease-in-out;
+            background-color: 2s ease-in 1s;
+        }
+        .box2:hover{
+            width: 200px;
+            height: 200px;
+            background-color: lightcoral;
+        }
+    </style>
+</head>
+<body>
+    <h1>Transition Style</h1>
+    <h3>Individual Transition</h3>
+    <div class="box">
+
+    </div>
+    <h3>Multiple Transitipon</h3>
+    <div class="box2">
+
+    </div>
+</body>
+</html>

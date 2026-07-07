@@ -1,0 +1,19 @@
+table,th, td{
+    border-bottom: 1px solid black;
+    border-collapse: collapse;
+
+}
+
+td{
+    
+    text-align:center;
+}
+th{
+    background-color: grey;
+    color: white;
+    font-weight: 900;
+}
+table{
+    width: 400px;
+    
+}

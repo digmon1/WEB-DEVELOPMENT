@@ -1,0 +1,36 @@
+#rgb{
+    background-color:  rgb(255, 0, 0);
+}
+#green{
+    background-color: rgb(52, 255, 1);
+}
+#blue{
+    background-color: rgb(24, 24, 239);
+}
+/*RGBA*/
+/*a-alpha. It values vaies in the range of 0-1
+0- lowest value (transparent)
+1- highest value (color is completely visible*/
+#alpha{
+    background-color: rgba(255,0,0,0.2);
+}
+/* HSL- HUE-0-260 , Saturation -0-100%, light-0-100%
+HUE- represent color,0/360-red, 120-green, 240-blue
+Saturation- 0%-black, 50%- blanced, 100%- white
+hsla()- here a refers alpha same like rgba*/
+#hsl{
+    background-color:hsl(0, 100%, 50%);
+}
+#hslgreen{
+    background-color: hsl(120, 100%, 50%);
+}
+
+#hslblue{
+    background-color: hsl(240, 100%, 50%);
+}
+#saturation{
+    background-color: hsl(0, 50%, 50%);
+}
+#light{
+    background-color: hsl(0, 50%, 38%);
+}

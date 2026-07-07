@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="../CSS/boxmodel.css">
+</head>
+<body>
+    <h1>Box Model</h1>
+    <hr>
+    <h3>Padding</h3>
+    <!--Padding is space between the element and the border.
+    syntax: Padding-left: Unit,
+    Padding--top: Unit,
+    Padding-Right: Unit,
+    Padding-Bottom: Unit,
+    Short-hand:
+        padding: unit(top-bottom) unit(right-left)
+        padding: top right bottom left;
+        padding:unit(all sides);-->
+    <div class="padding">
+        <p>Box-1</p>
+    </div>
+    <br>
+    <div class="box" style="padding: 50px 0px 0px 40px;">
+        Box A
+    </div>
+    <br>
+    <div class="box" style="padding: 50px 0px 40px 0px ;">
+        Box B
+    </div>
+    <br>
+    <div class="box" style="padding: 0px 50px 0px 40px;">
+        Box C
+    </div>
+
+    <hr>
+    <h3>Margin</h3>
+    <!--
+    Margin is a space between the element.
+    Syntax:
+        margn-top: unit;
+        margin-right: unit;
+        margin-bottom: unit;
+        margin-left: unit;
+        
+        short-hand:
+        padding: unit(top-bottom) unit(right-left)
+        padding: top right bottom left;
+        padding:unit(all sides)-->
+
+    <div class="margin" style="margin-bottom: 50px">
+        <p>Box-2</p>
+    </div>
+    <div class="margin">
+        Box-3
+    </div>
+    <hr>
+    <h3>outline</h3>
+    <!--Outline- line outside the border:
+    syntax:
+        Outline: Size style color;;
+        outline-offset: unit for the space between
+        oultine and b order-->
+    <p id="outline">Border line</p>
+</body>
+</html>
