@@ -20,5 +20,11 @@ team.unshift("Brazil");
 console.log(team);
 
 //Remove Value
-//i. pop()
-//ii.shift
+let WCWinners=["Croatia", "Germany", "Spain", "Italy","Netherlands"];
+console.log(WCWinners);
+//i. pop()- remove items from the last.
+WCWinners.pop();
+console.log(WCWinners);
+//ii.shift-()- remove items from the beginning.
+WCWinners.shift();
+console.log(WCWinners);
