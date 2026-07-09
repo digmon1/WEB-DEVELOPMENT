@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>DOM Day 1</h1>
+    <h1></h1>
+    <h2 id="access">Accessing HTML Element</h2>
+    <p class="method">
+        1. By id
+        2. By class
+        3. By tagname
+        4. By querySelector
+    </p>
+    <h3>By ID</h3>
+    <script>
+        // Acess by ID
+        let selectHeaderH2= document.getElementById("access")
+        console.log(selectHeaderH2)
+        // Acess by Tagname
+        let selectTagH1= document.getElementsByTagName('h1')
+        console.log(selectTagH1)
+        console.log(selectTagH1[0]);
+    </script>
+</body>
+</html>
