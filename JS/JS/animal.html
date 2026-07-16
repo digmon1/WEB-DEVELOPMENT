@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Animal List</title>
+</head>
+
+<body>
+
+    <h1 id="title"></h1>
+
+    <p class="animal"></p>
+    <p class="animal"></p>
+    <p class="animal"></p>
+    <p class="animal"></p>
+    <p class="animal"></p>
+    <p class="animal"></p>
+
+    <img class="img" src="" alt="">
+    <img class="img" src="" alt="">
+    <img class="img" src="" alt="">
+    <img class="img" src="" alt="">
+    <img class="img" src="" alt="">
+    <img class="img" src="" alt="">
+
+    <script>
+        // Select by ID
+        let title = document.getElementById("title");
+        title.innerText = "Animal List";
+
+        // Select all paragraphs
+        let animals = document.getElementsByClassName("animal");
+
+        animals[0].innerText = "Lion";
+        animals[1].innerText = "Tiger";
+        animals[2].innerText = "Elephant";
+        animals[3].innerText = "Giraffe";
+        animals[4].innerText = "Zebra";
+        animals[5].innerText = "Panda";
+
+        // Select all images
+        let image = document.getElementsByClassName("img");
+
+        image[0].src = "https://imgs.search.brave.com/4nCFuHcWx3HOkc8b0bxFEqvnXTp7vCFwwSrbS5oABb8/rs:fit:500:0:1:0/g:ce/aHR0cHM6Ly93d3cu/YW5pbWFsc3BvdC5u/ZXQvd3AtY29udGVu/dC91cGxvYWRzLzIw/MTcvMDQvTGlvbi1R/dW90ZXMtTWVtZXMu/cG5n";
+        image[1].src = "https://imgs.search.brave.com/6WCaHcX9sWCiL563oKipeUW1G4hT2x-xBS0xSJdsF_0/rs:fit:500:0:1:0/g:ce/aHR0cHM6Ly9pLmNo/emJnci5jb20vZnVs/bC8xMDM3OTc0MTY5/Ni9oQjI5MzQyNzkv/cmVsZWFzZS10aWdl/ci10aWdlcg";
+        image[2].src = "https://upload.wikimedia.org/wikipedia/commons/3/37/African_Bush_Elephant.jpg";
+        image[3].src = "https://upload.wikimedia.org/wikipedia/commons/9/9f/Giraffe_standing.jpg";
+        image[4].src = "https://imgs.search.brave.com/wOPNalJgOXVBcUwNZQsInL2zYvUJ_mRoFSi89LqXLCc/rs:fit:500:0:1:0/g:ce/aHR0cHM6Ly93YWxs/cGFwZXJzLmNvbS9p/bWFnZXMvaGQvemVi/cmEtaW4tZ3JlZW4t/ZmllbGQtNXdnM21h/cmRoeDNpZ2pmcC5q/cGc";
+        image[5].src = "https://upload.wikimedia.org/wikipedia/commons/0/0f/Grosser_Panda.JPG";
+
+        // Set image size
+        image[0].style.width = "250px";
+        image[1].style.width = "189px";
+        image[2].style.width = "125px";
+        image[3].style.width = "140px";
+        image[4].style.width = "335px";
+        image[5].style.width = "280px";
+    </script>
+
+</body>
+
+</html>

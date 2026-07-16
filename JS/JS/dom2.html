@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DOM Day 2</title>
+</head>
+
+<body>
+    <h1>DOM Day 2</h1>
+    <h2>Selection and Manipulation</h2>
+
+    <h3>Football</h3>
+
+    <h3 id="FootballTeams">
+        Football <span style="visibility: hidden;">Teams</span>
+    </h3>
+
+    <p class="teams">Argentina</p>
+    <p class="teams">Belgium</p>
+    <p class="teams">France</p>
+    <p class="teams">Spain</p>
+    <p class="teams">Norway</p>
+
+    <img id="img" src="" alt="">
+
+    <script>
+        // HTML Selection
+        /*
+        1. By ID
+        2. By Class
+        3. By Tag Name
+        4. By Query Selector
+        */
+
+        // Select by ID
+        let TitleFootball = document.getElementById("FootballTeams");
+        console.log(TitleFootball);
+
+        // Text Manipulation
+        /*
+        1. innerHTML - displays HTML inside the element
+        2. innerText - displays visible text only
+        3. textContent - displays both visible and hidden text
+        */
+
+        console.log("innerHTML:", TitleFootball.innerHTML);
+        console.log("innerText:", TitleFootball.innerText);
+        console.log("textContent:", TitleFootball.textContent);
+
+        // Change heading text
+        TitleFootball.innerText = "Kabbadi Teams";
+
+        // Select elements by class
+        let teams = document.getElementsByClassName("teams");
+        console.log(teams);
+        console.log(teams[0]);
+
+        // Argentina - Blue background, White text
+        teams[0].style.backgroundColor = "skyblue";
+        teams[0].style.color = "white";
+
+        // Spain - Red background, Yellow text
+        teams[3].style.backgroundColor = "green";
+        teams[3].style.color = "yellow";
+        // change Attribute
+        let image = document.getElementById("img");
+        image.src="https://imgs.search.brave.com/r6MVMkJ_mUBUcED34itbfNG74Pz6W0j2QOHfooTG0zA/rs:fit:500:0:1:0/g:ce/aHR0cHM6Ly9tZWRp/YS5nZXR0eWltYWdl/cy5jb20vaWQvODc4/NTIzNDY2L3Bob3Rv/LzMwLWp1bmUtMjAw/Mi15b2tvaGFtYS1m/aWZhLXdvcmxkLWN1/cC1maW5hbC1icmF6/aWwtdi1nZXJtYW55/LXJvbmFsZG8taG9s/ZHMtdGhlLXRyb3Bo/eS1hbG9mdC1mb3Iu/anBnP3M9NjEyeDYx/MiZ3PTAmaz0yMCZj/PXV0cUJLZ3lUazhu/N3JNTWszSHJ6VUdM/TXpYQ3Qza2JuYmNj/SW04NVJYX009";
+        image.style.width="200px";
+    </script>
+<!-- create an animal html. The html file should include empty h1(id = title), p(class = animal), img(class =img). in empty h1 insert text = " Animal List", in empty p tag add 5-6 animal name, in empty img tags and image of the animal using DOM-->
+</body>
+
+</html>
